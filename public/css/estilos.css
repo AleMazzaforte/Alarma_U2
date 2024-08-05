@@ -1,0 +1,110 @@
+:root {
+    --color1: #6c4536;
+    --color2: #58392e;
+    --color3: #845f43;
+    --color4: #bb945b;
+    --color5: #d6c573;
+}
+
+#headerIndex {
+    background-color: var(--color1);
+    color: rgb(12, 12, 12);
+}
+
+/* Estilos para el label crear */
+#crearUsuario {
+    width: 90%; /* Predeterminado al 90% de ancho para pantallas más pequeñas */
+    max-width: 300px;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.fomInputCrear {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+input {
+    width: 100%; /* Predeterminado al 100% de ancho para pantallas más pequeñas */
+    height: 30px;
+    margin-bottom: 5px;
+}
+
+/* Estilos generales para la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: left;
+}
+
+/* Estilo para las celdas de encabezado */
+th {
+    background-color: var(--color3);
+    color: white;
+    padding: 8px;
+}
+
+/* Estilo para las celdas de datos */
+td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Estilo para filas impares */
+tr:nth-child(even) {
+    background-color: var(--color4);
+}
+
+tr:nth-child(odd) {
+    background-color: var(--color5);
+}
+
+/* Estilo para filas al pasar el mouse por encima */
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+body {
+    background-color: #717D7E;
+}
+
+h1 {
+    background-color: #4c2a1e;
+    color: lightgray;
+}
+
+/* Media Queries para pantallas más grandes */
+@media (min-width: 768px) {
+    #crearUsuario {
+        width: 50%;
+    }
+
+    input {
+        width: 80%;
+    }
+
+    table {
+        font-size: 18px;
+    }
+}
+
+/* Media Queries para pantallas muy grandes */
+@media (min-width: 1200px) {
+    #crearUsuario {
+        width: 30%;
+    }
+
+    input {
+        width: 70%;
+    }
+
+    table {
+        font-size: 20px;
+    }
+}
+a {
+    color: black;
+}
+    

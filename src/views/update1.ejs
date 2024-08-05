@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actualizar Registro</title>
+    <style>
+        form {
+            width: 300px;
+            margin: 0 auto;
+            border: 1px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Actualizar Registro</h1>
+    <form action="/update/<%= registro.control %>?_method=PUT" method="POST">
+        <table>
+            <tr>
+                <td><label for="control">N° de control:</label></td>
+                <td><input type="number" name="control" value="<%= registro.control %>" required></td>
+            </tr>
+            <tr>
+                <td><label for="lote">N° de Lote:</label></td>
+                <td><input type="number" name="lote" value="<%= registro.lote %>" required></td>
+            </tr>
+            <tr>
+                <td><label for="direccion">Dirección:</label></td>
+                <td><input type="text" name="direccion" value="<%= registro.direccion %>" required></td>
+            </tr>
+            <tr>
+                <td><label for="telefono">N° de teléfono:</label></td>
+                <td><input type="number" name="telefono" value="<%= registro.telefono %>"></td>
+            </tr>
+            <tr>
+                <td><label for="nombre">Nombre:</label></td>
+                <td><input type="text" name="nombre" value="<%= registro.nombre %>"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" value="Actualizar"></td>
+            </tr>
+        </table><br>
+        <a href="/admin" style="color: black;">Regresar</a><br><br>
+    </form>
+    
+
+    
+</body>
+</html>
